@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PizzaSoft.Data/PizzaSoft.Data.csproj" />
+  <Project Path="PizzaSoft.Tests/PizzaSoft.Tests.csproj" />
+  <Project Path="PizzaSoft.Ui/PizzaSoft.Ui.csproj" />
+  <Project Path="PizzaSoft.WebApi/PizzaSoft.WebApi.csproj" />
+</Solution>
