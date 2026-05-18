@@ -32,7 +32,7 @@
             this.pbImagen.TabIndex = 0;
             this.pbImagen.TabStop = false;
             // Se puede poner un color de fondo temporal o imagen por defecto
-            this.pbImagen.BackColor = System.Drawing.Color.LightGray;
+            this.pbImagen.BackColor = System.Drawing.Color.FromArgb(245, 245, 245);
 
             // lblCategoria
             this.lblCategoria.AutoSize = true;
@@ -64,12 +64,16 @@
 
             // btnAgregar
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(39, 174, 96);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAgregar.Location = new System.Drawing.Point(100, 200);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(90, 30);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
 
             // UCTarjetaPizza
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);

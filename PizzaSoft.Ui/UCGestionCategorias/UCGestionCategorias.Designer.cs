@@ -38,8 +38,9 @@
 
             // lblTitulo
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(0, 15);
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(192, 57, 43);
+            this.lblTitulo.Location = new System.Drawing.Point(0, 5);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(217, 28);
             this.lblTitulo.TabIndex = 0;
@@ -77,7 +78,12 @@
             this.btnNuevaCategoria.Size = new System.Drawing.Size(150, 40);
             this.btnNuevaCategoria.TabIndex = 0;
             this.btnNuevaCategoria.Text = "Nueva Categoría";
-            this.btnNuevaCategoria.UseVisualStyleBackColor = true;
+            this.btnNuevaCategoria.BackColor = System.Drawing.Color.FromArgb(39, 174, 96);
+            this.btnNuevaCategoria.ForeColor = System.Drawing.Color.White;
+            this.btnNuevaCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevaCategoria.FlatAppearance.BorderSize = 0;
+            this.btnNuevaCategoria.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnNuevaCategoria.UseVisualStyleBackColor = false;
             this.btnNuevaCategoria.Click += new System.EventHandler(this.btnNuevaCategoria_Click);
 
             // btnEditarCategoria
@@ -86,7 +92,12 @@
             this.btnEditarCategoria.Size = new System.Drawing.Size(150, 40);
             this.btnEditarCategoria.TabIndex = 1;
             this.btnEditarCategoria.Text = "Editar Categoría";
-            this.btnEditarCategoria.UseVisualStyleBackColor = true;
+            this.btnEditarCategoria.BackColor = System.Drawing.Color.FromArgb(41, 128, 185);
+            this.btnEditarCategoria.ForeColor = System.Drawing.Color.White;
+            this.btnEditarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarCategoria.FlatAppearance.BorderSize = 0;
+            this.btnEditarCategoria.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnEditarCategoria.UseVisualStyleBackColor = false;
             this.btnEditarCategoria.Click += new System.EventHandler(this.btnEditarCategoria_Click);
 
             // btnEliminarCategoria
@@ -95,7 +106,12 @@
             this.btnEliminarCategoria.Size = new System.Drawing.Size(150, 40);
             this.btnEliminarCategoria.TabIndex = 2;
             this.btnEliminarCategoria.Text = "Eliminar Categoría";
-            this.btnEliminarCategoria.UseVisualStyleBackColor = true;
+            this.btnEliminarCategoria.BackColor = System.Drawing.Color.FromArgb(192, 57, 43);
+            this.btnEliminarCategoria.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarCategoria.FlatAppearance.BorderSize = 0;
+            this.btnEliminarCategoria.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnEliminarCategoria.UseVisualStyleBackColor = false;
             this.btnEliminarCategoria.Click += new System.EventHandler(this.btnEliminarCategoria_Click);
 
             this.pnlBotones.Controls.Add(this.btnNuevaCategoria);
@@ -120,6 +136,7 @@
             this.Name = "UCGestionCategorias";
             this.Size = new System.Drawing.Size(800, 600);
             this.Padding = new System.Windows.Forms.Padding(10);
+            this.BackColor = System.Drawing.Color.White;
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.pnlBotones.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);

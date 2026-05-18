@@ -22,7 +22,8 @@
 
             // lblTitulo
             this.lblTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(192, 57, 43);
             this.lblTitulo.Location = new System.Drawing.Point(10, 10);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(780, 40);
@@ -46,6 +47,7 @@
             this.Name = "UCGestionClientes";
             this.Size = new System.Drawing.Size(800, 600);
             this.Padding = new System.Windows.Forms.Padding(10);
+            this.BackColor = System.Drawing.Color.White;
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
         }

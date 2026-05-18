@@ -108,9 +108,12 @@
             // 
             // btnCancelarVenta
             // 
-            this.btnCancelarVenta.BackColor = System.Drawing.Color.MistyRose;
+            this.btnCancelarVenta.BackColor = System.Drawing.Color.FromArgb(192, 57, 43);
+            this.btnCancelarVenta.ForeColor = System.Drawing.Color.White;
             this.btnCancelarVenta.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnCancelarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarVenta.FlatAppearance.BorderSize = 0;
+            this.btnCancelarVenta.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelarVenta.Location = new System.Drawing.Point(0, 48);
             this.btnCancelarVenta.Name = "btnCancelarVenta";
             this.btnCancelarVenta.Size = new System.Drawing.Size(228, 40);
@@ -121,9 +124,12 @@
             // 
             // btnProcesarVenta
             // 
-            this.btnProcesarVenta.BackColor = System.Drawing.Color.LightGray;
+            this.btnProcesarVenta.BackColor = System.Drawing.Color.FromArgb(39, 174, 96);
+            this.btnProcesarVenta.ForeColor = System.Drawing.Color.White;
             this.btnProcesarVenta.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnProcesarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProcesarVenta.FlatAppearance.BorderSize = 0;
+            this.btnProcesarVenta.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnProcesarVenta.Location = new System.Drawing.Point(0, 88);
             this.btnProcesarVenta.Name = "btnProcesarVenta";
             this.btnProcesarVenta.Size = new System.Drawing.Size(228, 40);
@@ -134,6 +140,7 @@
             // 
             // pnlCatalogo
             // 
+            this.pnlCatalogo.BackColor = System.Drawing.Color.White;
             this.pnlCatalogo.Controls.Add(this.flpProductos);
             this.pnlCatalogo.Controls.Add(this.pnlFiltro);
             this.pnlCatalogo.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -202,7 +209,7 @@
             // flpProductos
             // 
             this.flpProductos.AutoScroll = true;
-            this.flpProductos.BackColor = System.Drawing.SystemColors.Control;
+            this.flpProductos.BackColor = System.Drawing.Color.White;
             this.flpProductos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpProductos.Location = new System.Drawing.Point(10, 70);
             this.flpProductos.Name = "flpProductos";
@@ -215,6 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnlCatalogo);
             this.Controls.Add(this.pnlCarrito);
             this.Name = "UCNuevaVenta";

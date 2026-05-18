@@ -8,6 +8,8 @@
         private System.ComponentModel.IContainer components = null;
 
         private System.Windows.Forms.Panel pnlSidebar;
+        private System.Windows.Forms.Panel pnlLogo;
+        private System.Windows.Forms.Label lblLogo;
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnVentas;
         private System.Windows.Forms.Button btnNuevaVenta;
@@ -37,6 +39,8 @@
         private void InitializeComponent()
         {
             pnlSidebar = new Panel();
+            pnlLogo = new Panel();
+            lblLogo = new Label();
             btnClientes = new Button();
             btnVentas = new Button();
             btnNuevaVenta = new Button();
@@ -44,81 +48,124 @@
             btnProductos = new Button();
             pnlContent = new Panel();
             pnlSidebar.SuspendLayout();
+            pnlLogo.SuspendLayout();
             SuspendLayout();
             // 
             // pnlSidebar
             // 
-            pnlSidebar.BackColor = Color.White;
-            pnlSidebar.BorderStyle = BorderStyle.FixedSingle;
+            pnlSidebar.BackColor = Color.FromArgb(192, 57, 43);
+            pnlSidebar.BorderStyle = BorderStyle.None;
             pnlSidebar.Controls.Add(btnClientes);
             pnlSidebar.Controls.Add(btnVentas);
             pnlSidebar.Controls.Add(btnNuevaVenta);
             pnlSidebar.Controls.Add(btnCategorias);
             pnlSidebar.Controls.Add(btnProductos);
+            pnlSidebar.Controls.Add(pnlLogo);
             pnlSidebar.Dock = DockStyle.Left;
             pnlSidebar.Location = new Point(0, 0);
             pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Padding = new Padding(10);
             pnlSidebar.Size = new Size(200, 432);
             pnlSidebar.TabIndex = 0;
+            // 
+            // pnlLogo
+            // 
+            pnlLogo.Controls.Add(lblLogo);
+            pnlLogo.Dock = DockStyle.Top;
+            pnlLogo.Location = new Point(0, 0);
+            pnlLogo.Name = "pnlLogo";
+            pnlLogo.Size = new Size(200, 70);
+            pnlLogo.TabIndex = 5;
+            pnlLogo.BackColor = Color.FromArgb(142, 36, 26);
+            // 
+            // lblLogo
+            // 
+            lblLogo.Dock = DockStyle.Fill;
+            lblLogo.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLogo.ForeColor = Color.White;
+            lblLogo.Location = new Point(0, 0);
+            lblLogo.Name = "lblLogo";
+            lblLogo.Size = new Size(200, 70);
+            lblLogo.TabIndex = 0;
+            lblLogo.Text = "🍕 PizzaSoft";
+            lblLogo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnClientes
             // 
             btnClientes.Dock = DockStyle.Top;
+            btnClientes.FlatAppearance.BorderSize = 0;
             btnClientes.FlatStyle = FlatStyle.Flat;
-            btnClientes.Location = new Point(10, 170);
+            btnClientes.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnClientes.ForeColor = Color.White;
+            btnClientes.Location = new Point(0, 270);
             btnClientes.Name = "btnClientes";
-            btnClientes.Size = new Size(178, 40);
+            btnClientes.Padding = new Padding(20, 0, 0, 0);
+            btnClientes.Size = new Size(200, 50);
             btnClientes.TabIndex = 4;
-            btnClientes.Text = "Clientes";
+            btnClientes.Text = "👥 Clientes";
             btnClientes.TextAlign = ContentAlignment.MiddleLeft;
             btnClientes.UseVisualStyleBackColor = true;
             // 
             // btnVentas
             // 
             btnVentas.Dock = DockStyle.Top;
+            btnVentas.FlatAppearance.BorderSize = 0;
             btnVentas.FlatStyle = FlatStyle.Flat;
-            btnVentas.Location = new Point(10, 130);
+            btnVentas.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnVentas.ForeColor = Color.White;
+            btnVentas.Location = new Point(0, 220);
             btnVentas.Name = "btnVentas";
-            btnVentas.Size = new Size(178, 40);
+            btnVentas.Padding = new Padding(20, 0, 0, 0);
+            btnVentas.Size = new Size(200, 50);
             btnVentas.TabIndex = 3;
-            btnVentas.Text = "Ventas";
+            btnVentas.Text = "📋 Historial Ventas";
             btnVentas.TextAlign = ContentAlignment.MiddleLeft;
             btnVentas.UseVisualStyleBackColor = true;
             // 
             // btnNuevaVenta
             // 
             btnNuevaVenta.Dock = DockStyle.Top;
+            btnNuevaVenta.FlatAppearance.BorderSize = 0;
             btnNuevaVenta.FlatStyle = FlatStyle.Flat;
-            btnNuevaVenta.Location = new Point(10, 90);
+            btnNuevaVenta.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnNuevaVenta.ForeColor = Color.White;
+            btnNuevaVenta.Location = new Point(0, 170);
             btnNuevaVenta.Name = "btnNuevaVenta";
-            btnNuevaVenta.Size = new Size(178, 40);
+            btnNuevaVenta.Padding = new Padding(20, 0, 0, 0);
+            btnNuevaVenta.Size = new Size(200, 50);
             btnNuevaVenta.TabIndex = 2;
-            btnNuevaVenta.Text = "Nueva Venta";
+            btnNuevaVenta.Text = "🛒 Nueva Venta";
             btnNuevaVenta.TextAlign = ContentAlignment.MiddleLeft;
             btnNuevaVenta.UseVisualStyleBackColor = true;
             // 
             // btnCategorias
             // 
             btnCategorias.Dock = DockStyle.Top;
+            btnCategorias.FlatAppearance.BorderSize = 0;
             btnCategorias.FlatStyle = FlatStyle.Flat;
-            btnCategorias.Location = new Point(10, 50);
+            btnCategorias.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCategorias.ForeColor = Color.White;
+            btnCategorias.Location = new Point(0, 120);
             btnCategorias.Name = "btnCategorias";
-            btnCategorias.Size = new Size(178, 40);
+            btnCategorias.Padding = new Padding(20, 0, 0, 0);
+            btnCategorias.Size = new Size(200, 50);
             btnCategorias.TabIndex = 1;
-            btnCategorias.Text = "Categorías";
+            btnCategorias.Text = "🏷️ Categorías";
             btnCategorias.TextAlign = ContentAlignment.MiddleLeft;
             btnCategorias.UseVisualStyleBackColor = true;
             // 
             // btnProductos
             // 
             btnProductos.Dock = DockStyle.Top;
+            btnProductos.FlatAppearance.BorderSize = 0;
             btnProductos.FlatStyle = FlatStyle.Flat;
-            btnProductos.Location = new Point(10, 10);
+            btnProductos.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnProductos.ForeColor = Color.White;
+            btnProductos.Location = new Point(0, 70);
             btnProductos.Name = "btnProductos";
-            btnProductos.Size = new Size(178, 40);
+            btnProductos.Padding = new Padding(20, 0, 0, 0);
+            btnProductos.Size = new Size(200, 50);
             btnProductos.TabIndex = 0;
-            btnProductos.Text = "Productos";
+            btnProductos.Text = "🍕 Productos";
             btnProductos.TextAlign = ContentAlignment.MiddleLeft;
             btnProductos.UseVisualStyleBackColor = true;
             // 

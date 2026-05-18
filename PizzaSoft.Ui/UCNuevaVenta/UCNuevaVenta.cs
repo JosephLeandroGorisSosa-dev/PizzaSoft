@@ -172,6 +172,15 @@ namespace PizzaSoft.Ui.UCNuevaVenta
             dgvCarrito.Columns.Add("Precio", "Precio");
             dgvCarrito.Columns.Add("Subtotal", "Subtotal");
 
+            DataGridViewButtonColumn btnEliminar = new DataGridViewButtonColumn();
+            btnEliminar.Name = "Eliminar";
+            btnEliminar.HeaderText = "";
+            btnEliminar.Text = "X";
+            btnEliminar.UseColumnTextForButtonValue = true;
+            btnEliminar.FillWeight = 15;
+            btnEliminar.FlatStyle = FlatStyle.Flat;
+            dgvCarrito.Columns.Add(btnEliminar);
+
             dgvCarrito.ReadOnly = true;
             dgvCarrito.AllowUserToAddRows = false;
             dgvCarrito.RowHeadersVisible = false;
@@ -183,6 +192,19 @@ namespace PizzaSoft.Ui.UCNuevaVenta
             dgvCarrito.Columns["Precio"].FillWeight = 25;
             dgvCarrito.Columns["Subtotal"].FillWeight = 25;
             dgvCarrito.Columns["Nombre"].FillWeight = 30;
+
+            // Evento para capturar el click en el botón Eliminar
+            dgvCarrito.CellClick -= DgvCarrito_CellClick;
+            dgvCarrito.CellClick += DgvCarrito_CellClick;
+        }
+
+        private void DgvCarrito_CellClick(object? sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && dgvCarrito.Columns[e.ColumnIndex].Name == "Eliminar")
+            {
+                dgvCarrito.Rows.RemoveAt(e.RowIndex);
+                ActualizarTotal();
+            }
         }
 
         private void CargarProductosDesdeBD()

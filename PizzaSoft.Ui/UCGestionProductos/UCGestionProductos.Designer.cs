@@ -38,8 +38,9 @@
 
             // lblTitulo
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(0, 15);
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(192, 57, 43);
+            this.lblTitulo.Location = new System.Drawing.Point(0, 5);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(217, 28);
             this.lblTitulo.TabIndex = 0;
@@ -77,7 +78,12 @@
             this.btnNuevoProducto.Size = new System.Drawing.Size(150, 40);
             this.btnNuevoProducto.TabIndex = 0;
             this.btnNuevoProducto.Text = "Nuevo Producto";
-            this.btnNuevoProducto.UseVisualStyleBackColor = true;
+            this.btnNuevoProducto.BackColor = System.Drawing.Color.FromArgb(39, 174, 96);
+            this.btnNuevoProducto.ForeColor = System.Drawing.Color.White;
+            this.btnNuevoProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoProducto.FlatAppearance.BorderSize = 0;
+            this.btnNuevoProducto.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnNuevoProducto.UseVisualStyleBackColor = false;
             this.btnNuevoProducto.Click += new System.EventHandler(this.btnNuevoProducto_Click);
 
             // btnEditarProducto
@@ -86,7 +92,12 @@
             this.btnEditarProducto.Size = new System.Drawing.Size(150, 40);
             this.btnEditarProducto.TabIndex = 1;
             this.btnEditarProducto.Text = "Editar Producto";
-            this.btnEditarProducto.UseVisualStyleBackColor = true;
+            this.btnEditarProducto.BackColor = System.Drawing.Color.FromArgb(41, 128, 185);
+            this.btnEditarProducto.ForeColor = System.Drawing.Color.White;
+            this.btnEditarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarProducto.FlatAppearance.BorderSize = 0;
+            this.btnEditarProducto.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnEditarProducto.UseVisualStyleBackColor = false;
             this.btnEditarProducto.Click += new System.EventHandler(this.btnEditarProducto_Click);
 
             // btnEliminarProducto
@@ -95,7 +106,12 @@
             this.btnEliminarProducto.Size = new System.Drawing.Size(150, 40);
             this.btnEliminarProducto.TabIndex = 2;
             this.btnEliminarProducto.Text = "Eliminar Producto";
-            this.btnEliminarProducto.UseVisualStyleBackColor = true;
+            this.btnEliminarProducto.BackColor = System.Drawing.Color.FromArgb(192, 57, 43);
+            this.btnEliminarProducto.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarProducto.FlatAppearance.BorderSize = 0;
+            this.btnEliminarProducto.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnEliminarProducto.UseVisualStyleBackColor = false;
             this.btnEliminarProducto.Click += new System.EventHandler(this.btnEliminarProducto_Click);
 
             this.pnlBotones.Controls.Add(this.btnNuevoProducto);
@@ -120,6 +136,7 @@
             this.Name = "UCGestionProductos";
             this.Size = new System.Drawing.Size(800, 600);
             this.Padding = new System.Windows.Forms.Padding(10);
+            this.BackColor = System.Drawing.Color.White;
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.pnlBotones.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);

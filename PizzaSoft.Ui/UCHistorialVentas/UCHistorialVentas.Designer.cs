@@ -26,7 +26,7 @@
             this.SuspendLayout();
 
             // pnlContainer
-            this.pnlContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlContainer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pnlContainer.BackColor = System.Drawing.Color.White;
             this.pnlContainer.Controls.Add(this.lblMensaje);
             this.pnlContainer.Controls.Add(this.lblTitulo);
@@ -40,8 +40,9 @@
 
             // lblTitulo
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(10, 10);
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(192, 57, 43);
+            this.lblTitulo.Location = new System.Drawing.Point(10, 5);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(193, 28);
             this.lblTitulo.TabIndex = 0;
@@ -90,6 +91,7 @@
             this.Name = "UCHistorialVentas";
             this.Size = new System.Drawing.Size(800, 600);
             this.Padding = new System.Windows.Forms.Padding(10);
+            this.BackColor = System.Drawing.Color.White;
             this.pnlContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
             this.ResumeLayout(false);
