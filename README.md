@@ -1,7 +1,9 @@
 # PizzaSoft - Sistema de Punto de Venta (POS) para Pizzerías
 
+![Interfaz del Proyecto](docs/assets/interfaz.jpg)
+
 PizzaSoft es un sistema de escritorio desarrollado en Windows Forms 
-(.NET 10, C# 14) orientado a la gestión, control y automatización de procesos 
+(.NET 10, C# 14) orientado a la gestión, control y automatización de procesos
 de venta para pizzerías o restaurantes de comida rápida. El proyecto está 
 pensado para organizar de forma ágil la relación entre clientes, productos, 
 categorías y el registro del historial de ventas, con una base técnica robusta 
@@ -125,6 +127,9 @@ La interfaz de usuario está compuesta por un contenedor central y módulos din�
 ### 4. Capa de Calidad (PizzaSoft.Tests) - Pruebas
 Asegura la solidez mediante la inyección de repositorios simulados (`InMemory 
 Database`) bajo el framework xUnit:
+
+![Pruebas Unitarias](docs/assets/pruebas.jpg)
+
 - **Pruebas de CRUD**: Valida que los productos y categorías se guarden, lean, 
   actualicen y eliminen.
 - **Pruebas de Búsqueda**: Asegura que el motor de filtrado de los 
